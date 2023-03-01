@@ -111,6 +111,14 @@ img {
 .hero {
 	background-color: var(--basic-color);
 	padding: 188px 0;
+	max-width: 1440px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
 }
 .hero-container {
 	display: flex;
@@ -213,8 +221,10 @@ img {
 
 .team-item {
 	background-color: var(--title-color);
+	padding-bottom: 32px;
 	border-radius: 0px 0px 4px 4px;
 	flex-basis: calc((100% - 72px) / 4);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -232,7 +242,25 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--adress-description-color);
 	text-align: center;
-	padding-bottom: 32px;
+	margin-bottom: 8px;
+}
+
+.button-icon {
+	margin-top: 8px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.icon {
+	/* height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	background-position: center;
+	background-repeat: no-repeat; */
 }
 .footer {
 	background-color: var(--basic-color);
@@ -282,11 +310,13 @@ img {
 	padding: 12px 24px;
 	cursor: pointer;
 	font-family: inherit;
+	border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
 	background-color: var(--accent-color);
 	color: var(--title-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .services {
 	padding-bottom: 128px;
@@ -299,7 +329,11 @@ img {
 .service-list > .services-item {
 	flex-basis: calc((100% - 48px) / 3);
 }
-
+.services-item:hover,
+.services-item:focus {
+	cursor: pointer;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .services-title {
 	font-weight: 500;
 	font-size: 20px;
